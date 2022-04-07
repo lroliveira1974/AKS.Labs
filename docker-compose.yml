@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  aks.api:
+    image: ${DOCKER_REGISTRY-}aksapi
+    build:
+      context: .
+      dockerfile: AKS.API/Dockerfile
